@@ -7,7 +7,7 @@ function App() {
 	const [country, setCountry] = useState('98');
 
 	const goToWhatsapp = () => {
-		const url = 'https://wa.me/' + '+' + country + tel;
+		const url = 'https://wa.me/+' + country + tel;
 		window.open(url, '_blank');
 	};
 	const onEnter = (e) => {
@@ -54,6 +54,15 @@ function App() {
 				>
 					Go to whatsapp!
 				</button>
+				<a
+					href="https://visitorbadge.io/status?path=https%3A%2F%2Fghodsizadeh.github.io%2Fwame%2F"
+					className=" absolute bottom-0"
+				>
+					<img
+						src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fghodsizadeh.github.io%2Fwame%2F&countColor=%23263759"
+						alt="hits"
+					/>
+				</a>
 			</header>
 		</div>
 	);
