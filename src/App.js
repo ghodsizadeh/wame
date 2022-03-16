@@ -35,10 +35,12 @@ function App() {
 							id="countries"
 							value={country}
 							onChange={(e) => setCountry()}
+							autoComplete
 						>
 							{Object.values(countries).map((country) => (
-								<option value={country.phone} key={country.phone} className="px-6 text-xs">
-									{country.emoji} (+{country.phone})
+								<option value={country.phone} key={country.name} className="px-6 text-xs">
+									{country.emoji}
+									{country.name} (+{country.phone})
 								</option>
 							))}
 						</select>
